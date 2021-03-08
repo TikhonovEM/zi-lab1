@@ -20,6 +20,12 @@ namespace zi_lab1
             AccessRights = new AccessRights(accessMatrix);
         }
 
+        public File(string name, string path, int permissionLevel, AccessRights accessRights) 
+            : base(name, path, permissionLevel)
+        {
+            AccessRights = accessRights;
+        }
+
         public File(string serializedObj) : base(serializedObj)
         {
             var matrix = serializedObj.Split(",");
@@ -38,6 +44,20 @@ namespace zi_lab1
             AccessRights = new AccessRights(dict);
         }
 
+        public override string ToString()
+        {
+            var sb = new List<string>();
+            foreach(var pair in AccessRights.AccessMatrix)
+            {
+                var rights = string.Empty;
+                if (pair.Value.Contains(Permission.Read))
+                    rights += "r";
+                if (pair.Value.Contains(Permission.Write))
+                    rights += "w";
+                sb.Add($"{pair.Key.Guid}:{rights}");
+            }
+            return $"f,{Guid},{Name},{Path},{PermissionLevel},{string.Join(",", sb)}";
+        }
         public override void Open()
         {
             throw new NotImplementedException();

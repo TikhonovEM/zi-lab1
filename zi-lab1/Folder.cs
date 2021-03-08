@@ -10,6 +10,16 @@ namespace zi_lab1
         {
 
         }
+
+        public Folder(string name, string path, int permissionLevel) : base(name, path, permissionLevel)
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return $"d,{Guid},{Name},{Path},{PermissionLevel}";
+        }
         public override void Open()
         {
             throw new NotImplementedException();

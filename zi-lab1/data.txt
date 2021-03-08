@@ -1,5 +1,7 @@
 d,beefde51-b9fd-4ac0-9915-acfc1b7bd865,root1,@,0
 d,22046454-127c-4efa-ad4e-28fbf81dcd09,root2,@,1
 f,58503cb7-f4da-4995-9a39-dc8023ef1ffd,examplefile,/root1,0,d78fef6f-9678-4db3-ba8f-748a5df7a383:rw,95308e67-ae52-442e-8b47-e49070622a87:r
-d,103ada45-4836-452a-bc15-917d52a392f0,anime,/root1,0
-f,65897b5d-218e-42f6-b33e-6c68eab19079,examplefile1,/root1/anime,1,d78fef6f-9678-4db3-ba8f-748a5df7a383:rw,95308e67-ae52-442e-8b47-e49070622a87:r
+d,103ada45-4836-452a-bc15-917d52a392f0,folder,/root1,0
+f,65897b5d-218e-42f6-b33e-6c68eab19079,examplefile1,/root1/folder,0,d78fef6f-9678-4db3-ba8f-748a5df7a383:rw,95308e67-ae52-442e-8b47-e49070622a87:r
+f,db88f7a6-4d74-4a4e-bf21-0351f556ffa4,tast,/root2,1,d78fef6f-9678-4db3-ba8f-748a5df7a383:rw
+f,c8f2906f-8e1f-4af0-bcba-8bea7d998353,anotherFIle,/root2,1,d78fef6f-9678-4db3-ba8f-748a5df7a383:rw

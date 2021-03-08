@@ -19,7 +19,7 @@ namespace zi_lab1
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            foreach(var line in System.IO.File.ReadLines("data.txt"))
+            foreach(var line in System.IO.File.ReadLines(@"C:\Users\grego\Desktop\zi-lab1\zi-lab1\zi-lab1\data.txt"))
             {
                 Entity entity;
                 if (line.StartsWith("f"))
